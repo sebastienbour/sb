@@ -7,17 +7,18 @@
         <title>Sébastien Bouriaud</title>
     </head>
     <body>
-        <nav>
-            <a href="#">
+        <nav id="nav">
+            <a href="#nav" style="position: sticky;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
                     <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
                     <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                 </svg>
             </a>
+            <div class="spacer"></div>
             <div class="nav-items">
-                <a href="#">Compétences</a>
-                <a href="#">Curriculum Vitae</a>
+                <a href="#competences">Compétences</a>
+                <a href="#curriculum">Curriculum Vitae</a>
                 <a href="https://linkedin.com/in/sebastienbouriaud" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
@@ -44,10 +45,11 @@
             </div>
         </nav>
         <div class="container" id="container">
-            <div class="presentation">
+            <div class="content">
                 <h1>Sébastien Bouriaud</h1>
                 <p><i>Développeur full stack</i></p>
                 <p>
+                    <br>
                     Salut, je suis Sébastien Bouriaud, futur développeur web.
                     <br><br>
                     Actuellement en 2ème année d'un BUT Métiers du Multimédia et de l'Internet, 
@@ -62,6 +64,68 @@
                     <br><br>
                     En dehors de la programmation, j'aime écouter de la musique et jouer aux jeux vidéo.
                 </p>
+            </div>
+        </div>
+        <div class="container" id="container">
+            <div class="content">
+                <h2 id="competences">Compétences</h2>
+                <p>
+                    <br>
+                    Je maîtrise les langages suivants :
+                    <br><br>
+                </p>
+                <div class="row">
+                    <div class="inf">
+                        <p>HTML</p>
+                        <div class="progress-bar" id="html"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                    </div>
+                    <div class="inf">
+                        <p>CSS</p>
+                        <div class="progress-bar" id="css"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="inf">
+                        <p>JavaScript</p>
+                        <div class="progress-bar" id="js"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M7.5 8h3v8l-2 -1" />
+                            <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                        </svg>
+                    </div>
+                    <div class="inf">
+                        <p>PHP</p>
+                        <div class="progress-bar" id="php"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 12m-10 0a10 9 0 1 0 20 0a10 9 0 1 0 -20 0" />
+                            <path d="M5.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" />
+                            <path d="M15.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" />
+                            <path d="M12 7.5l-1 5.5" />
+                            <path d="M11.6 10h2.4l-.5 3" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container">
+            <div class="content">
+                <h2 id="curriculum">Curriculum Vitae</h2>
+                <p>
+                    <br>
+                    Ci-dessous se trouve mon CV : 
+                    <br><br>
+                </p>
+                <img src="img/CV-Sébastien_Bouriaud.jpg" alt="Curriculum Vitae Sébastien Bouriaud" style="border: 2px solid var(--secondary-color);">
             </div>
         </div>
         <script src="script.js"></script>

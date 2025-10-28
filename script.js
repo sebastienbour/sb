@@ -5,7 +5,7 @@ const darkmode = document.getElementById('darkmode');
 const lightmode = document.getElementById('lightmode');
 const container = document.getElementById('container');
 
-// Light/Dark mode 
+// Light/Dark mode
 function setLightmode(){
     darkmodeOn = false;
     lightmode.style.display = 'block';

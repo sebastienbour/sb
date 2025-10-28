@@ -41,7 +41,7 @@ button{
 
 nav{
     display: grid;
-    grid-template-columns: auto max-content;
+    grid-template-columns: max-content auto max-content;
     gap: 24px;
     width: 100%;
     padding: 32px;
@@ -50,7 +50,9 @@ nav{
 
 svg{
     width: 24px;
+    min-width: 24px;
     height: 24px;
+    min-height: 24px;
     fill: none;
     stroke: var(--nav-color);
     stroke-width: 2;
@@ -62,6 +64,10 @@ svg{
 svg:hover{
     transition: .3s;
     stroke: var(--nav-color-hover);
+}
+
+.spacer{
+    width: 100%;
 }
 
 .nav-items{
@@ -81,13 +87,17 @@ nav a:hover{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 32px;
     padding-top: 32px;
 }
 
-.presentation{
+.content{
     display: flex;
     flex-direction: column;
     max-width: 55%;
+    min-width: 55%;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 32px;
 }
 
 h1, p{
@@ -99,10 +109,6 @@ p{
     line-height: 1.5;
 }
 
-.container p{
-    margin-bottom: 24px;
-}
-
 p a{
     color: var(--secondary-color);
     font-weight: bold;
@@ -111,4 +117,50 @@ p a{
 
 p a:hover{
     text-decoration: underline;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.inf{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1 calc(50% - 16px);
+    padding-right: 4rem;
+}
+
+.inf p{
+    font-weight: bold;
+}
+
+.inf svg{
+    stroke: var(--text-color);
+    cursor: default;
+}
+
+.progress-bar{
+    width: 7rem;
+    min-width: 7rem;
+    height: 14px;
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+}
+#html{
+    background-color: #cc5d3c;
+}
+#css{
+    background-image: linear-gradient(to right, #4655dc 90%, var(--secondary-color) 90%);
+}
+#js{
+    background-image: linear-gradient(to right, #f0d858 75%, var(--secondary-color) 75%);
+}
+#php{
+    background-image: linear-gradient(to right, #7e80b2 50%, var(--secondary-color) 50%);
 }
