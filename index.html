@@ -8,13 +8,13 @@
     </head>
     <body>
         <nav id="nav">
-            <a href="#nav" style="position: sticky;">
+            <button id="refresh">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
                     <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
                     <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                 </svg>
-            </a>
+            </button>
             <div class="spacer"></div>
             <div class="nav-items">
                 <a href="#competences">Compétences</a>
@@ -57,12 +57,17 @@
                     <a id="pole" href="https://www.vichy-communaute.fr/projets/enseignement-superieur/pole-universitaire-de-vichy/" target="_blank">Pôle Universitaire de Vichy</a> 
                     afin de me spécialiser dans ce domaine.
                     <br><br>
-                    J’ai acquis de bonnes compétences en HTML, CSS, JavaScript ainsi que PHP,
-                    que j’ai mises en pratique à travers plusieurs projets,
-                    dont la création d’un site vitrine pour une entreprise de coproduction et d’un site web utilisant l’API de la Base Joconde,
+                    J'ai acquis de bonnes compétences en <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> ainsi que <span>PHP</span>,
+                    que j'ai mises en pratique à travers plusieurs projets,
+                    dont la création d'un site vitrine pour une entreprise de coproduction et d'un site web utilisant l'API de la Base Joconde,
                     consultables sur mon profil GitHub.
                     <br><br>
-                    En dehors de la programmation, j'aime écouter de la musique et jouer aux jeux vidéo.
+                    Mon expérience <span>UX/UI</span> design me permet de faire du développement <span>front-end</span>, toutefois, j'aimerais par la suite m'orienter plus vers le <span>back-end</span>.
+                    <br><br>
+                    En dehors de la programmation, j'aime écouter de la <i>musique</i>, notamment de l'électro. 
+                    Mon album préféré est <a id="trilogy" href="https://carpenterbrut.bandcamp.com/album/trilogy" target="_blank">Trilogy</a> 
+                    du français <span id="carpenterbrut">Carpenter Brut</span>, et mes artistes favoris sont <span id="waveshaper">Waveshaper</span> et <span id="daftpunk">Daft Punk</span>.
+                    J'aime également jouer aux <i>jeux vidéo</i>. <span id="bloodborne">Bloodborne</span>, <span id="outerwilds">Outer Wilds</span> ou encore <span id="uncharted">Uncharted 2: Among Thieves</span> font partie de mes jeux préférés.
                 </p>
             </div>
         </div>
@@ -115,6 +120,25 @@
                         </svg>
                     </div>
                 </div>
+                <p>
+                    <br><br>
+                    <i>En cours d'apprentissage :</i>
+                    <br><br>
+                </p>
+                <div class="row">
+                    <div class="infplus">
+                        <p><b>C#</b></p>
+                        <img src="img/C_sharp.png" alt="CSharp">
+                    </div>
+                    <div class="infplus">
+                        <p><b>React</b></p>
+                        <img src="img/React.png" alt="React">
+                    </div>
+                    <div class="infplus">
+                        <p><b>Python</b></p>
+                        <img src="img/Python.png" alt="Python">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" id="container">
@@ -128,6 +152,14 @@
                 <img src="img/CV-Sébastien_Bouriaud.jpg" alt="Curriculum Vitae Sébastien Bouriaud" style="border: 2px solid var(--secondary-color);">
             </div>
         </div>
+        <div class="tooltip" id="tooltip"></div>
+        <button id="up">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 5l0 14" />
+                <path d="M16 9l-4 -4" />
+                <path d="M8 9l4 -4" />
+            </svg>
+        </button>
         <script src="script.js"></script>
     </body>
 </html>
