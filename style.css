@@ -125,6 +125,15 @@ span{
     color: var(--secondary-color);
 }
 
+ul{
+    margin-left: 1.5rem;
+    color: var(--text-color);
+}
+
+li{
+    margin-bottom: .5rem;
+}
+
 .row{
     display: flex;
     justify-content: space-around;
@@ -135,7 +144,7 @@ span{
 
 .inf{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 16px;
     flex: 1 1 calc(50% - 16px);
@@ -227,6 +236,10 @@ span{
         flex: 100%;
         padding-right: 0;
         justify-content: flex-start;
+    }
+
+    .row{
+        margin-bottom: 14px;
     }
 }
 
